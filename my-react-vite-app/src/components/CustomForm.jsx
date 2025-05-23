@@ -41,7 +41,7 @@ const NavBar = () => {
   };
   return (
     <nav className="h-16 bg-blue-600 text-white flex items-center px-8 shadow-md">
-      <h1 className="text-lg font-semibold">File Decryption</h1>
+      <h1 className="text-lg font-semibold" style={{color:'red'}}>Client A File Decryption</h1>
       <div className="ml-auto flex items-center space-x-5">
         <button className="hover:underline" onClick={handleLogout}>
           Logout
@@ -181,7 +181,7 @@ const CustomForm = () => {
             onSubmit={form.handleSubmit(onSubmit)}
             className="space-y-7 w-full max-w-lg bg-white p-8 rounded-lg shadow-lg"
           >
-            <h2 className="text-xl font-semibold text-center mb-6">File Decryption</h2>
+            <h2 className="text-xl font-semibold text-center mb-6" style={{color:'red'}}>Client A File Decryption</h2>
 
             {/* Project Dropdown */}
             <FormField

@@ -189,7 +189,7 @@ const CustomForm = () => {
               name="projectname"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Project</FormLabel>
+                  <FormLabel>Project Name</FormLabel>
                   <Select
                     onValueChange={(value) => {
                       field.onChange(value); // Update form value

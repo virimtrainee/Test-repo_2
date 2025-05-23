@@ -40,14 +40,16 @@ const NavBar = () => {
     navigate("/login");
   };
   return (
-    <nav className="h-16 bg-blue-600 text-white flex items-center px-8 shadow-md">
-      <h1 className="text-lg font-semibold">File Decryption</h1>
-      <div className="ml-auto flex items-center space-x-5">
-        <button className="hover:underline" onClick={handleLogout}>
-          Logout
-        </button>
-      </div>
-    </nav>
+    <nav className="h-16 bg-white text-black flex items-center px-8 shadow-md">
+    <h1 className="text-lg font-semibold" style={{ color: "gray" }}>
+      Client B File Decryption
+    </h1>
+    <div className="ml-auto flex items-center space-x-5">
+      <button className="hover:underline" onClick={handleLogout}>
+        Logout
+      </button>
+    </div>
+  </nav>
   );
 };
 
@@ -172,7 +174,15 @@ const CustomForm = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div
+  style={{
+    backgroundImage: "url('public/images/image.jpeg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    minHeight: "90vh",
+  }}
+  
+>
       <NavBar />
 
       <div className="flex justify-center items-center min-h-[calc(100vh-4rem)] px-8 parent-form">
@@ -181,7 +191,7 @@ const CustomForm = () => {
             onSubmit={form.handleSubmit(onSubmit)}
             className="space-y-7 w-full max-w-lg bg-white p-8 rounded-lg shadow-lg"
           >
-            <h2 className="text-xl font-semibold text-center mb-6">File Decryption</h2>
+            <h2 className="text-xl font-semibold text-center mb-6"style={{color:'gray'}}>Client B File Decryption</h2>
 
             {/* Project Dropdown */}
             <FormField

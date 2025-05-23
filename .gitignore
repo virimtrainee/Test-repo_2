@@ -1,0 +1,4 @@
+.vscode/*
+config.josn
+my-react-vite-app/node_modules/
+node_modules/
